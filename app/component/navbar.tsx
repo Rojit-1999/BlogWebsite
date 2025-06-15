@@ -2,7 +2,7 @@ import React from "react";
 import { NavItems } from "../data";
 import Button from "./button";
 import Image from "next/image";
-
+import { FaUser } from "react-icons/fa";
 const NavBar = () => {
   return (
     <div className="bg-[#FAFAFA] w-full h-[80px] flex justify-between items-center px-[50px]">
@@ -24,7 +24,7 @@ const NavBar = () => {
           </div>
         ))}
       </div>
-      <Button text="Get Started" />
+      <Button text="Login" icon={<FaUser />} />
     </div>
   );
 };
